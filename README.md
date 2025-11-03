@@ -16,6 +16,3 @@ This is the official web application for Milo’s personal **blog** and **merch 
 - **API:** Custom .NET 8 backend (`meetmilo-api`)
 
 ---
-
-## 🧱 Project Structure
-
