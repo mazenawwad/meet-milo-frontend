@@ -33,3 +33,24 @@ body {
 .headerButton{
   font-family: 'Momo Trust Display';
 }
+svg path {
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-dasharray: 725;
+  stroke-dashoffset: 725;
+  animation: textAnimation 4s forwards ease-in-out;
+}
+
+@keyframes textAnimation {
+  0% {
+    stroke-dashoffset: 725;
+  }
+  80% {
+    fill:transparent
+  }
+  100% {
+    fill: #fff;
+    stroke-dashoffset: 0;
+  }
+}
