@@ -10,6 +10,7 @@ export const miloImages = {
   milo4: '/milo4.png',
   milo5: '/milo5.png',
   milo6: '/milo6.png',
+  milo7: '/milo7.png',
 } as const;
 
 // Export as an array for easy iteration
@@ -20,6 +21,7 @@ export const miloImagesArray = [
   miloImages.milo4,
   miloImages.milo5,
   miloImages.milo6,
+  miloImages.milo7,
 ] as const;
 
 
