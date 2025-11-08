@@ -35,6 +35,9 @@ body {
 }
 .footerFont{
   font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: italic;
 }
 .titlePath {
   fill: transparent;
