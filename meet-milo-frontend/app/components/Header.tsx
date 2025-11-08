@@ -1,11 +1,27 @@
+'use client'
+import { Menu } from "lucide-react";
 import Link from "next/link";
-import React from "react";
+import { useState } from "react";
+import SideMenu from "./SideMenu";
+
 
 const Header = () => {
+
+  const [shown, triggerMenu] =  useState<boolean>(false);
+
+  const handleClick = () =>{
+    triggerMenu(!shown);
+  }
   return (
     <header className="relative w-full h-20 lg:h-30 bg-linear-to-tr from-[#4b3621] via-[#af7f4f] to-[#50381f] transition-all duration-300 flex items-center justify-center">
+      <Menu
+        onClick={handleClick}
+        size={30}
+        className="absolute md:hidden left-5 top-1/2 -translate-y-1/2 hover:text-white transition duration-300 cursor-pointer"
+      />
+      {shown && <SideMenu handleClick={handleClick} />}
       <Link
-        className="flex items-center justify-center text-xl md:text-2xl lg:text-5xl headerTitle cursor-pointer transition-all duration-300"
+        className="flex items-center justify-center text-l sm:text-xl md:text-2xl lg:text-5xl headerTitle cursor-pointer transition-all duration-300"
         href="/"
       >
         <svg
