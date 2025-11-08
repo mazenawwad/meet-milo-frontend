@@ -36,7 +36,7 @@ body {
 .footerFont{
   font-family: "Playfair Display", serif;
 }
-svg path {
+.titlePath {
   fill: transparent;
   stroke: #fff;
   stroke-width: 2;
