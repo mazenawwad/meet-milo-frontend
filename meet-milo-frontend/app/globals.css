@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Momo+Signature&family=Momo+Trust+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import "tailwindcss";
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -32,6 +32,9 @@ body {
 }
 .headerButton{
   font-family: 'Momo Trust Display';
+}
+.footerFont{
+  font-family: "Playfair Display", serif;
 }
 svg path {
   fill: transparent;
