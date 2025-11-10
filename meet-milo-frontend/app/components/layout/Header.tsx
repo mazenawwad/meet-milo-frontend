@@ -2,7 +2,7 @@
 import { Menu } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
-import SideMenu from "../SideMenu";
+import SideMenu from "../layout/SideMenu";
 
 
 const Header = () => {
