@@ -42,13 +42,18 @@ body {
 }
 .titlePath {
   fill: transparent;
-  stroke: #fff;
+  stroke: #4E3826;
   stroke-width: 2;
   stroke-dasharray: 725;
   stroke-dashoffset: 725;
   animation: textAnimation 4s forwards ease-in-out;
+  transition: stroke 0.3s ease, filter 0.3s ease;
 }
-
+.parentLink:hover .titlePath{
+  stroke: #ceb69f;
+  fill: #8b5a2b !important;
+  filter: drop-shadow(0 0 6px rgba(180, 120, 63, 0.9));
+}
 @keyframes textAnimation {
   0% {
     stroke-dashoffset: 725;
@@ -57,7 +62,7 @@ body {
     fill:transparent
   }
   100% {
-    fill: #fff;
+    fill: #4E3826;
     stroke-dashoffset: 0;
   }
 }
@@ -65,4 +70,30 @@ body {
   font-family: "Slackey", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+.wobble:hover {
+    animation: wobbleSkew 0.8s ease-out;
+}
+@keyframes wobbleSkew {
+  0% {
+    transform: skewX(0deg);
+  }
+  15% {
+    transform: skewX(-10deg);
+  }
+  30% {
+    transform: skewX(8deg);
+  }
+  45% {
+    transform: skewX(-6deg);
+  }
+  60% {
+    transform: skewX(4deg);
+  }
+  75% {
+    transform: skewX(-2deg);
+  }
+  100% {
+    transform: skewX(0deg);
+  }
 }
