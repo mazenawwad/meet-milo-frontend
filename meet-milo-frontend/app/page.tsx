@@ -1,11 +1,10 @@
 import React from 'react'
-import { miloImages } from './lib/images'
-import Image from 'next/image'
+import HeroSection from './components/layout/HeroSection';
 const LandingPage = () => {
   return (
-    <div className="h-300">
-      <Image src={miloImages.milo7} alt="Milo 7" width={600} height={300}/>
-    </div>
+  <>
+    <HeroSection />
+  </>
   );
 }
 
