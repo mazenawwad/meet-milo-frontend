@@ -10,6 +10,7 @@ const Header = () => {
   const [shown, triggerMenu] =  useState<boolean>(false);
 
   const handleClick = () =>{
+    console.log("click");
     triggerMenu(!shown);
   }
   return (
@@ -17,9 +18,11 @@ const Header = () => {
       <Menu
         onClick={handleClick}
         size={30}
-        className="absolute md:hidden left-5 top-1/2 -translate-y-1/2 hover:text-white transition duration-300 cursor-pointer"
+        className="absolute size-6 sm:size-9  md:hidden left-5 top-1/2 -translate-y-1/2 hover:text-white transition duration-300 cursor-pointer"
       />
-      {shown && <SideMenu handleClick={handleClick} />}
+      {/* {shown &&  */}
+      <SideMenu handleClick={handleClick} shown={shown}/>
+    
       <Link
         className="flex items-center justify-center text-l sm:text-xl md:text-2xl lg:text-5xl headerTitle cursor-pointer transition-all duration-300"
         href="/"
