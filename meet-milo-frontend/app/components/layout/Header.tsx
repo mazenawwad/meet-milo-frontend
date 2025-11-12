@@ -2,7 +2,7 @@
 import { Menu } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
-import SideMenu from "../layout/SideMenu";
+import DropdownMenu from "./DropdownMenu";
 import { HeaderButtons } from "@/app/constants/HeaderButtons";
 import HeaderButton from "./HeaderButton";
 
@@ -21,7 +21,7 @@ const Header = () => {
         className="absolute size-6 sm:size-9  md:hidden left-5 top-1/2 -translate-y-1/2 hover:text-white transition duration-300 cursor-pointer"
       />
       {/* {shown &&  */}
-      <SideMenu handleClick={handleClick} shown={shown} />
+      <DropdownMenu handleClick={handleClick} shown={shown} />
 
       <Link
         className="parentLink px-3 flex items-center justify-center text-l sm:text-xl md:text-2xl lg:text-5xl headerTitle cursor-pointer transition-all duration-300"
