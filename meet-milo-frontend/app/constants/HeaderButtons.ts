@@ -5,15 +5,15 @@ export type HeaderButton = {
 
 export const HeaderButtons: HeaderButton[] = [
   {
-    label: "Blog",
+    label: "BLOG",
     path: "/blog",
   },
   {
-    label: "Store",
+    label: "STORE",
     path: "/store",
   },
   {
-    label: "About",
+    label: "ABOUT",
     path: "/about",
   },
 ];
