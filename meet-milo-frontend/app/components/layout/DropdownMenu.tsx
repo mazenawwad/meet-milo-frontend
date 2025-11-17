@@ -13,14 +13,29 @@ console.log(prop.shown);
         prop.shown ? "translate-y-0" : ""
       }`}
     >
-      <div className="w-full"></div>
-      <Image src={miloImages.milo8} width={500} height={500} alt="milo8" />
+      <div className="w-full h-20 bg-[#8b5a2b] headerTitle flex items-center justify-center text-2xl sm:text-3xl transition-all duration-300">
+        {" "}
+        Milo Menu
+      </div>
+      {/* <Image src={miloImages.milo8} width={500} height={500} alt="milo8" /> */}
       <button
         onClick={prop.handleClick}
-        className="top-0 right-0 size-10 bg-red-500 rounded-full  absolute -translate-x-1/2"
+        className="-translate-x-1/2 top-2 right-2 size-14 bg-[#E5F7FA] cursor-pointer p-2 rounded-full group absolute"
       >
-        {" "}
-        click
+        <Image
+          src={miloImages.milo9}
+          width={700}
+          height={700}
+          alt="milo9"
+          className="group-hover:hidden "
+        />
+        <Image
+          src={miloImages.milo10}
+          width={700}
+          height={700}
+          alt="milo10"
+          className="hidden group-hover:block"
+        />
       </button>
     </div>
   );
