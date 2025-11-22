@@ -1,9 +1,9 @@
-export type HeaderButton = {
+export type MenuButton = {
   label: string;
   path: string;
 };
 
-export const HeaderButtons: HeaderButton[] = [
+export const MenuButtons: MenuButton[] = [
   {
     label: "BLOG",
     path: "/blog",

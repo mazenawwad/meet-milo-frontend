@@ -3,8 +3,8 @@ import { Menu } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import DropdownMenu from "./DropdownMenu";
-import { HeaderButtons } from "@/app/constants/HeaderButtons";
-import HeaderButton from "./HeaderButton";
+import { MenuButtons } from "@/app/constants/MenuButtons";
+import MenuButton from "./MenuButton";
 
 const Header = () => {
 
@@ -41,8 +41,8 @@ const Header = () => {
         </svg>
       </Link>
       <div className="hidden md:flex items-center justify-between">
-        {HeaderButtons.map((button, index) => (
-          <HeaderButton label={button.label} path={button.path} key={index} />
+        {MenuButtons.map((button, index) => (
+          <MenuButton label={button.label} path={button.path} key={index} />
         ))}
       </div>
     </header>
