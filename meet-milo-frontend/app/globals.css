@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Momo+Signature&family=Momo+Trust+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
 @import "tailwindcss";
 :root {
@@ -33,6 +34,11 @@ body {
 }
 .menuButton{
   font-family: 'Momo Trust Display';
+}
+.dropdownMenuButton{
+  font-family: "Barrio", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 .footerFont{
   font-family: "Playfair Display", serif;

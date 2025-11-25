@@ -1,15 +1,16 @@
-import { miloImages } from '@/app/lib/images';
+import { miloImages, miloStickers } from '@/app/lib/images';
 import Image from 'next/image';
 import React from 'react'
+import { MenuButtons } from '@/app/constants/MenuButtons';
+import DropdownMenuButton from './DropdownMenuButton';
  interface props {
    handleClick: () => void;
    shown: boolean;
  }
 const DropdownMenu = (prop:props) => {
-console.log(prop.shown);
   return (
     <div
-      className={`md:hidden fixed h-screen left-0 top-0 -translate-y-[100vh] bg-[#E5F7FA] flex flex-col gap-2 items-center justify-start w-screen z-100 transition-all duration-1000 ease-in-out ${
+      className={`md:hidden fixed h-screen left-0 top-0 -translate-y-[100vh] bg-[#E5F7FA] flex flex-col items-center justify-start w-screen z-100 transition-all duration-1000 ease-in-out ${
         prop.shown ? "translate-y-0" : ""
       }`}
     >
@@ -36,8 +37,11 @@ console.log(prop.shown);
           />
         </button>
       </div>
-      <div className="flex flex-col items-center justify-start">
-        
+        <Image src={miloStickers.MiloBag} alt='bag' width={100} height={100}/>
+      <div className="flex flex-col items-center justify-start w-full">
+        {MenuButtons.map((button,i)=>(
+          <DropdownMenuButton key={i} label={button.label} path={button.path} icon={button.icon}/>
+        ))}
       </div>
     </div>
   );
