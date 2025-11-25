@@ -3,6 +3,8 @@
  * All images are stored in the public folder
  */
 
+// TODO remove the unused images later
+//general images of milo that were used randomly throughout the layout *
 export const miloImages = {
   milo1: '/milo1.png',
   milo2: '/milo2.png',
@@ -16,18 +18,16 @@ export const miloImages = {
   milo10: '/milo10.png',
 } as const;
 
-// Export as an array for easy iteration
-export const miloImagesArray = [
-  miloImages.milo1,
-  miloImages.milo2,
-  miloImages.milo3,
-  miloImages.milo4,
-  miloImages.milo5,
-  miloImages.milo6,
-  miloImages.milo7,
-  miloImages.milo8,
-  miloImages.milo9,
-  miloImages.milo10,
-] as const;
+//created a separate folder for the stickers due to the different nature of the image styles
+export const miloStickers = {
+  MiloBag: "/miloStickers/MiloBag.png",
+  MiloBlanket: "/miloStickers/MiloBlanket.png",
+  MiloBook: "/miloStickers/MiloBook.png",
+  MiloCamera: "/miloStickers/MiloCamera.png",
+  MiloGlasses: "/miloStickers/MiloGlasses.png",
+  MiloKeyboard: "/miloStickers/MiloKeyboard.png",
+  MiloLaptop: "/miloStickers/MiloLaptop.png",
+  MiloMug: "/miloStickers/MiloMug.png",
+} as const;
 
 
