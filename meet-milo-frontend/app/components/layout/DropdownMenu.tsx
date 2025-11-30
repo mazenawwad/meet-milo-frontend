@@ -1,4 +1,4 @@
-import { miloImages, miloStickers } from '@/app/lib/images';
+import { miloImages } from '@/app/lib/images';
 import Image from 'next/image';
 import React from 'react'
 import { MenuButtons } from '@/app/constants/MenuButtons';
@@ -37,10 +37,15 @@ const DropdownMenu = (prop:props) => {
           />
         </button>
       </div>
-        <Image src={miloStickers.MiloBag} alt='bag' width={100} height={100}/>
       <div className="flex flex-col items-center justify-start w-full">
         {MenuButtons.map((button,i)=>(
-          <DropdownMenuButton key={i} label={button.label} path={button.path} icon={button.icon}/>
+          <DropdownMenuButton
+            key={i} 
+            label={button.label} 
+            path={button.path} 
+            image={button.image}
+            handleClick={prop.handleClick}
+          />
         ))}
       </div>
     </div>

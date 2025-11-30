@@ -1,9 +1,9 @@
-import { BadgeInfo, LucideIcon, NotebookPen, ShoppingBasket } from 'lucide-react';
+import { miloStickers } from '@/app/lib/images';
 
 export type MenuButton = {
   label: string;
   path: string;
-  icon: LucideIcon;
+  image?: string;
 };
 
 export const MenuButtons: MenuButton[] = [
@@ -11,16 +11,16 @@ export const MenuButtons: MenuButton[] = [
   {
     label: "BLOG",
     path: "/blog",
-    icon: NotebookPen
+    image: miloStickers.MiloLaptop
   },
   {
     label: "STORE",
     path: "/store",
-    icon: ShoppingBasket
+    image: miloStickers.MiloBag
   },
   {
     label: "ABOUT",
     path: "/about",
-    icon: BadgeInfo
+    image: miloStickers.MiloGlasses
   },
 ];
