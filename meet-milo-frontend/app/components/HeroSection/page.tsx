@@ -5,7 +5,7 @@ import React from 'react'
 const HeroSection = () => {
   return (
     <div className="w-full bg-red-100">
-      <div className="relative flex flex-col items-center justify-start h-300">
+      <div className="relative flex flex-col items-center justify-start">
         <div className="flex flex-col mt-3 text-center w-full z-1 absolute top-0 size-20">
           <span className="text-3xl sm:text-[50px] md:text-[70px] lg:text-[90px] xl:text-[100px] xl:leading-30 w-full text-center heroTitle h-fit transition-all duration-300">
             did you just say
